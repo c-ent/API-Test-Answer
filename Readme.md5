@@ -6,7 +6,7 @@ RUN
 
 'node server.js'
 
-'main1.py'
+'python main1.py'
 
 
 The simple list for each day would now be save on data/snapshots/day_{day}.json
