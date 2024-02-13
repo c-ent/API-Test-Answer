@@ -6,9 +6,6 @@ import requests
 API_ENDPOINT = "http://localhost:5000/update_properties"
 
 def post_properties(properties):
-    """
-    Function to post properties to the API.
-    """
     try:
         response = requests.post(API_ENDPOINT, json=properties)
         if response.status_code == 200:
@@ -16,7 +13,7 @@ def post_properties(properties):
         else:
             print(f"Failed to post properties. Status code: {response.status_code}")
             print("Error message:", response.text)
-    except Exception as e:
+    except Exception as e: 
         print("An error occurred while posting properties:", e)
 
 # Define the function to normalize the address format
@@ -70,7 +67,6 @@ def normalize_property_company_a(property_data, company_name):
         "dateAdded": property_data.get("dateAvailable", "")  # You might need to convert this to a proper date format
     }
     return normalized_property
-
 
 # Normalize the property data for company B
 def normalize_property_company_b(property_data, company_name):
