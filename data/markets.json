@@ -1,0 +1,704 @@
+[
+    {
+        "market": "philadelphia",
+        "state": "pa",
+        "latitude": 39.9525839,
+        "longitude": -75.1652215
+    },
+    {
+        "market": "tampa",
+        "state": "fl",
+        "latitude": 27.9516896,
+        "longitude": -82.45875269999999
+    },
+    {
+        "market": "houston",
+        "state": "tx",
+        "latitude": 29.7604267,
+        "longitude": -95.3698028
+    },
+    {
+        "market": "phoenix",
+        "state": "az",
+        "latitude": 33.4483771,
+        "longitude": -112.0740373
+    },
+    {
+        "market": "cape-coral",
+        "state": "fl",
+        "latitude": 26.5628537,
+        "longitude": -81.9495331
+    },
+    {
+        "market": "oklahoma-city",
+        "state": "ok",
+        "latitude": 35.4675602,
+        "longitude": -97.5164276
+    },
+    {
+        "market": "orlando",
+        "state": "fl",
+        "latitude": 28.5383832,
+        "longitude": -81.3789269
+    },
+    {
+        "market": "spokane",
+        "state": "wa",
+        "latitude": 47.6579711,
+        "longitude": -117.4235319
+    },
+    {
+        "market": "san-antonio",
+        "state": "tx",
+        "latitude": 29.4251905,
+        "longitude": -98.4945922
+    },
+    {
+        "market": "seattle",
+        "state": "wa",
+        "latitude": 47.6061389,
+        "longitude": -122.3328481
+    },
+    {
+        "market": "dallas",
+        "state": "tx",
+        "latitude": 32.7766642,
+        "longitude": -96.79698789999999
+    },
+    {
+        "market": "portland",
+        "state": "or",
+        "latitude": 45.515232,
+        "longitude": -122.6783853
+    },
+    {
+        "market": "yakima",
+        "state": "wa",
+        "latitude": 46.6020711,
+        "longitude": -120.5058987
+    },
+    {
+        "market": "miami",
+        "state": "fl",
+        "latitude": 25.7616798,
+        "longitude": -80.1917902
+    },
+    {
+        "market": "san-diego",
+        "state": "ca",
+        "latitude": 32.715738,
+        "longitude": -117.1610838
+    },
+    {
+        "market": "austin",
+        "state": "tx",
+        "latitude": 30.267153,
+        "longitude": -97.7430608
+    },
+    {
+        "market": "washington-dc",
+        "state": "md",
+        "latitude": 39.6130477,
+        "longitude": -77.69941969999999
+    },
+    {
+        "market": "denver",
+        "state": "co",
+        "latitude": 39.7392358,
+        "longitude": -104.990251
+    },
+    {
+        "market": "jacksonville",
+        "state": "fl",
+        "latitude": 30.3321838,
+        "longitude": -81.65565099999999
+    },
+    {
+        "market": "greensboro",
+        "state": "nc",
+        "latitude": 36.0726354,
+        "longitude": -79.7919754
+    },
+    {
+        "market": "winston-salem",
+        "state": "nc",
+        "latitude": 36.09985959999999,
+        "longitude": -80.244216
+    },
+    {
+        "market": "saint-louis",
+        "state": "mo",
+        "latitude": 38.6270025,
+        "longitude": -90.19940419999999
+    },
+    {
+        "market": "columbia",
+        "state": "sc",
+        "latitude": 34.0007104,
+        "longitude": -81.0348144
+    },
+    {
+        "market": "myrtle-beach",
+        "state": "sc",
+        "latitude": 33.6954218,
+        "longitude": -78.8802094
+    },
+    {
+        "market": "tuscaloosa",
+        "state": "al",
+        "latitude": 33.2098407,
+        "longitude": -87.56917349999999
+    },
+    {
+        "market": "wilmington",
+        "state": "nc",
+        "latitude": 34.2103894,
+        "longitude": -77.8868117
+    },
+    {
+        "market": "huntsville",
+        "state": "al",
+        "latitude": 34.7303688,
+        "longitude": -86.5861037
+    },
+    {
+        "market": "augusta",
+        "state": "ga",
+        "latitude": 33.4734978,
+        "longitude": -82.0105148
+    },
+    {
+        "market": "indianapolis",
+        "state": "in",
+        "latitude": 39.768403,
+        "longitude": -86.158068
+    },
+    {
+        "market": "birmingham",
+        "state": "al",
+        "latitude": 33.5185892,
+        "longitude": -86.8103567
+    },
+    {
+        "market": "atlanta",
+        "state": "ga",
+        "latitude": 33.748752,
+        "longitude": -84.38768449999999
+    },
+    {
+        "market": "lakeland",
+        "state": "fl",
+        "latitude": 28.0394654,
+        "longitude": -81.9498042
+    },
+    {
+        "market": "jackson",
+        "state": "ms",
+        "latitude": 32.2987573,
+        "longitude": -90.1848103
+    },
+    {
+        "market": "kansas-city",
+        "state": "mo",
+        "latitude": 39.0997265,
+        "longitude": -94.5785667
+    },
+    {
+        "market": "montgomery",
+        "state": "al",
+        "latitude": 32.3792233,
+        "longitude": -86.3077368
+    },
+    {
+        "market": "charleston",
+        "state": "sc",
+        "latitude": 32.7764749,
+        "longitude": -79.93105120000001
+    },
+    {
+        "market": "raleigh",
+        "state": "nc",
+        "latitude": 35.7795897,
+        "longitude": -78.6381787
+    },
+    {
+        "market": "nashville",
+        "state": "tn",
+        "latitude": 36.1626638,
+        "longitude": -86.7816016
+    },
+    {
+        "market": "cincinnati",
+        "state": "oh",
+        "latitude": 39.1031182,
+        "longitude": -84.5120196
+    },
+    {
+        "market": "dayton",
+        "state": "oh",
+        "latitude": 39.7589478,
+        "longitude": -84.1916069
+    },
+    {
+        "market": "columbus",
+        "state": "oh",
+        "latitude": 39.9611755,
+        "longitude": -82.99879419999999
+    },
+    {
+        "market": "little-rock",
+        "state": "ar",
+        "latitude": 34.7444618,
+        "longitude": -92.2880157
+    },
+    {
+        "market": "charlotte",
+        "state": "nc",
+        "latitude": 35.2270869,
+        "longitude": -80.8431267
+    },
+    {
+        "market": "greenville",
+        "state": "sc",
+        "latitude": 34.85261759999999,
+        "longitude": -82.3940104
+    },
+    {
+        "market": "cleveland",
+        "state": "oh",
+        "latitude": 41.49932,
+        "longitude": -81.6943605
+    },
+    {
+        "market": "port-orange",
+        "state": "fl",
+        "latitude": 29.1383165,
+        "longitude": -80.9956105
+    },
+    {
+        "market": "memphis",
+        "state": "tn",
+        "latitude": 35.1495343,
+        "longitude": -90.0489801
+    },
+    {
+        "market": "las-vegas",
+        "state": "nv",
+        "latitude": 36.171563,
+        "longitude": -115.1391009
+    },
+    {
+        "market": "kissimmee",
+        "state": "fl",
+        "latitude": 28.2920578,
+        "longitude": -81.4077305
+    },
+    {
+        "market": "fort-myers",
+        "state": "fl",
+        "latitude": 26.640628,
+        "longitude": -81.8723084
+    },
+    {
+        "market": "lake-worth",
+        "state": "fl",
+        "latitude": 26.6167555,
+        "longitude": -80.0684479
+    },
+    {
+        "market": "chicago",
+        "state": "il",
+        "latitude": 41.8781136,
+        "longitude": -87.6297982
+    },
+    {
+        "market": "tucson",
+        "state": "az",
+        "latitude": 32.2539787,
+        "longitude": -110.9741769
+    },
+    {
+        "market": "colorado-springs",
+        "state": "co",
+        "latitude": 38.8338816,
+        "longitude": -104.8213634
+    },
+    {
+        "market": "high-point",
+        "state": "nc",
+        "latitude": 35.9556923,
+        "longitude": -80.0053176
+    },
+    {
+        "market": "louisville",
+        "state": "ky",
+        "latitude": 38.2526647,
+        "longitude": -85.7584557
+    },
+    {
+        "market": "fort-worth",
+        "state": "tx",
+        "latitude": 32.7554883,
+        "longitude": -97.3307658
+    },
+    {
+        "market": "richmond",
+        "state": "va",
+        "latitude": 37.5407246,
+        "longitude": -77.4360481
+    },
+    {
+        "market": "baltimore",
+        "state": "md",
+        "latitude": 39.2903848,
+        "longitude": -76.6121893
+    },
+    {
+        "market": "pittsburgh",
+        "state": "pa",
+        "latitude": 40.44062479999999,
+        "longitude": -79.9958864
+    },
+    {
+        "market": "virginia-beach",
+        "state": "va",
+        "latitude": 36.8516437,
+        "longitude": -75.97921939999999
+    },
+    {
+        "market": "grand-rapids",
+        "state": "mi",
+        "latitude": 42.9633599,
+        "longitude": -85.6680863
+    },
+    {
+        "market": "san-francisco",
+        "state": "ca",
+        "latitude": 37.7749295,
+        "longitude": -122.4194155
+    },
+    {
+        "market": "aurora",
+        "state": "il",
+        "latitude": 41.7605849,
+        "longitude": -88.32007150000001
+    },
+    {
+        "market": "waukegan",
+        "state": "il",
+        "latitude": 42.3636331,
+        "longitude": -87.84479379999999
+    },
+    {
+        "market": "rockford",
+        "state": "il",
+        "latitude": 42.2711311,
+        "longitude": -89.0939952
+    },
+    {
+        "market": "olympia",
+        "state": "wa",
+        "latitude": 47.0378741,
+        "longitude": -122.9006951
+    },
+    {
+        "market": "tacoma",
+        "state": "wa",
+        "latitude": 47.2528768,
+        "longitude": -122.4442906
+    },
+    {
+        "market": "salt-lake-city",
+        "state": "ut",
+        "latitude": 40.7607793,
+        "longitude": -111.8910474
+    },
+    {
+        "market": "savannah",
+        "state": "ga",
+        "latitude": 32.0808989,
+        "longitude": -81.091203
+    },
+    {
+        "market": "athens",
+        "state": "ga",
+        "latitude": 33.9519347,
+        "longitude": -83.357567
+    },
+    {
+        "market": "knoxville",
+        "state": "tn",
+        "latitude": 35.9606384,
+        "longitude": -83.9207392
+    },
+    {
+        "market": "clarksville",
+        "state": "tn",
+        "latitude": 36.5297706,
+        "longitude": -87.3594528
+    },
+    {
+        "market": "boise",
+        "state": "id",
+        "latitude": 43.6150186,
+        "longitude": -116.2023137
+    },
+    {
+        "market": "milwaukee",
+        "state": "wi",
+        "latitude": 43.0389025,
+        "longitude": -87.9064736
+    },
+    {
+        "market": "melbourne",
+        "state": "fl",
+        "latitude": 28.0836269,
+        "longitude": -80.60810889999999
+    },
+    {
+        "market": "albuquerque",
+        "state": "nm",
+        "latitude": 35.0843859,
+        "longitude": -106.650422
+    },
+    {
+        "market": "salem",
+        "state": "or",
+        "latitude": 44.9428975,
+        "longitude": -123.0350963
+    },
+    {
+        "market": "reno",
+        "state": "nv",
+        "latitude": 39.529919,
+        "longitude": -119.8142691
+    },
+    {
+        "market": "macon",
+        "state": "ga",
+        "latitude": 32.8406946,
+        "longitude": -83.6324022
+    },
+    {
+        "market": "minneapolis",
+        "state": "mn",
+        "latitude": 44.977753,
+        "longitude": -93.2650108
+    },
+    {
+        "market": "fort-lauderdale",
+        "state": "fl",
+        "latitude": 26.1224386,
+        "longitude": -80.13731740000001
+    },
+    {
+        "market": "springfield",
+        "state": "mo",
+        "latitude": 37.2089572,
+        "longitude": -93.29229889999999
+    },
+    {
+        "market": "sacramento",
+        "state": "ca",
+        "latitude": 38.5815719,
+        "longitude": -121.4943996
+    },
+    {
+        "market": "lubbock",
+        "state": "tx",
+        "latitude": 33.5845617,
+        "longitude": -101.8456417
+    },
+    {
+        "market": "corpus-christi",
+        "state": "tx",
+        "latitude": 27.8005828,
+        "longitude": -97.39638099999999
+    },
+    {
+        "market": "santa-rosa",
+        "state": "ca",
+        "latitude": 38.440429,
+        "longitude": -122.7140548
+    },
+    {
+        "market": "brunswick",
+        "state": "ga",
+        "latitude": 31.1510919,
+        "longitude": -81.4878157
+    },
+    {
+        "market": "adairsville",
+        "state": "ga",
+        "latitude": 34.3687021,
+        "longitude": -84.9341093
+    },
+    {
+        "market": "dawsonville",
+        "state": "ga",
+        "latitude": 34.4212052,
+        "longitude": -84.1190804
+    },
+    {
+        "market": "toledo",
+        "state": "oh",
+        "latitude": 41.6528052,
+        "longitude": -83.5378674
+    },
+    {
+        "market": "tulsa",
+        "state": "ok",
+        "latitude": 36.1539816,
+        "longitude": -95.99277500000001
+    },
+    {
+        "market": "texarkana",
+        "state": "tx",
+        "latitude": 33.425125,
+        "longitude": -94.04768820000001
+    },
+    {
+        "market": "tupelo",
+        "state": "ms",
+        "latitude": 34.2576066,
+        "longitude": -88.7033859
+    },
+    {
+        "market": "asheville",
+        "state": "nc",
+        "latitude": 35.5950581,
+        "longitude": -82.5514869
+    },
+    {
+        "market": "chattanooga",
+        "state": "tn",
+        "latitude": 35.0457984,
+        "longitude": -85.3093995
+    },
+    {
+        "market": "florence",
+        "state": "al",
+        "latitude": 34.79981,
+        "longitude": -87.677251
+    },
+    {
+        "market": "greenville",
+        "state": "nc",
+        "latitude": 35.612661,
+        "longitude": -77.3663538
+    },
+    {
+        "market": "omaha",
+        "state": "ne",
+        "latitude": 41.2565369,
+        "longitude": -95.9345034
+    },
+    {
+        "market": "fayetteville",
+        "state": "ar",
+        "latitude": 36.0626579,
+        "longitude": -94.16058389999999
+    },
+    {
+        "market": "farmington",
+        "state": "nm",
+        "latitude": 36.72805830000001,
+        "longitude": -108.2186856
+    },
+    {
+        "market": "port-st-lucie",
+        "state": "fl",
+        "latitude": 27.2730492,
+        "longitude": -80.3582261
+    },
+    {
+        "market": "ocala",
+        "state": "fl",
+        "latitude": 29.1871986,
+        "longitude": -82.14009229999999
+    },
+    {
+        "market": "lafayette",
+        "state": "la",
+        "latitude": 30.2240897,
+        "longitude": -92.0198427
+    },
+    {
+        "market": "amarillo",
+        "state": "tx",
+        "latitude": 35.2219971,
+        "longitude": -101.8312969
+    },
+    {
+        "market": "baton-rouge",
+        "state": "la",
+        "latitude": 30.4514677,
+        "longitude": -91.18714659999999
+    },
+    {
+        "market": "new-york-city",
+        "state": "ny",
+        "latitude": 40.7127753,
+        "longitude": -74.0059728
+    },
+    {
+        "market": "los-angeles",
+        "state": "ca",
+        "latitude": 34.0549076,
+        "longitude": -118.242643
+    },
+    {
+        "market": "topeka",
+        "state": "ks",
+        "latitude": 39.0473451,
+        "longitude": -95.67515759999999
+    },
+    {
+        "market": "lexington",
+        "state": "ky",
+        "latitude": 38.0405837,
+        "longitude": -84.5037164
+    },
+    {
+        "market": "bellingham",
+        "state": "wa",
+        "latitude": 48.7519112,
+        "longitude": -122.4786854
+    },
+    {
+        "market": "south-bend",
+        "state": "in",
+        "latitude": 41.6763545,
+        "longitude": -86.25198979999999
+    },
+    {
+        "market": "columbus",
+        "state": "ga",
+        "latitude": 32.4609764,
+        "longitude": -84.9877094
+    },
+    {
+        "market": "davenport",
+        "state": "ia",
+        "latitude": 41.5236437,
+        "longitude": -90.5776367
+    },
+    {
+        "market": "rochester",
+        "state": "ny",
+        "latitude": 43.15657789999999,
+        "longitude": -77.6088465
+    },
+    {
+        "market": "detroit",
+        "state": "mi",
+        "latitude": 42.331427,
+        "longitude": -83.0457538
+    },
+    {
+        "market": "buffalo",
+        "state": "ny",
+        "latitude": 42.88644679999999,
+        "longitude": -78.8783689
+    }
+]

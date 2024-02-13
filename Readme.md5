@@ -1,0 +1,19 @@
+### PS Code Challenge 1
+
+RUN
+
+'npm install'
+
+'node server.js'
+
+'main1.py'
+
+
+The simple list for each day would now be save on data/snapshots/day_{day}.json
+
+
+BONUS
+To fetches all properties in the Simple List system within a 65 mile radius  use the GET endpoint
+
+Replace {latitude} and {longitude} with your input
+http://localhost:5000/properties_within_radius?latitude={latitude}&longitude={longitude}
