@@ -2,7 +2,7 @@
 Setup
 Install dependencies: npm install
 Start the server: node server.js
-Run the main script: python main1.py
+Run the main script: python main.py
 Output
 The daily property list is saved in data/snapshots/day_{day}.json.
 
