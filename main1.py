@@ -17,6 +17,7 @@ def post_properties(properties):
         print("An error occurred while posting properties:", e)
 
 # Define the function to normalize the address format
+# Though its sepcially made for company B 
 def normalize_address_format(properties):
     for property_data in properties:
         if 'street' in property_data and '#text' in property_data['street']:
@@ -26,28 +27,17 @@ def normalize_address_format(properties):
 
 # Normalize the property data for company A
 def normalize_property_company_a(property_data, company_name):
-    num_beds = property_data.get("beds", "0")
-    try:
-        num_beds = int(num_beds)
-    except ValueError:
-        num_beds = 0  # or any other default value you prefer if "beds" is not a valid integer or "TBD"
-    num_baths = property_data.get("baths", "0")
-    try:
-        num_baths = float(num_baths)
-    except ValueError:
-        num_baths = 0.0  # or any other default value you prefer if "baths" is not a valid float or "TBD"
-    
-    square_feet = property_data.get("squareFootage", "0")
-    try:
-        square_feet = int(square_feet) if square_feet is not None else 0
-    except ValueError:
-        square_feet = 0  # or any other default value you prefer if "squareFootage" is not a valid integer or "TBD"
-    
-    price = property_data.get("rentAmount", "0")
-    try:
-        price = int(price)
-    except ValueError:
-        price = 0  # or any other default value you prefer if "rentAmount" is not a valid integer or "TBD"
+    def get_number_property(property_data, property_name):
+        try:
+            value = float(property_data.get(property_name) or "0")
+            return int(value)
+        except ValueError:
+            return 0
+
+    num_beds = get_number_property(property_data, "beds")
+    num_baths = get_number_property(property_data, "baths")
+    square_feet = get_number_property(property_data, "squareFootage")
+    price = get_number_property(property_data, "rentAmount")
 
     normalized_property = {
         "address": property_data.get("address", "").lower(),
@@ -70,11 +60,17 @@ def normalize_property_company_a(property_data, company_name):
 
 # Normalize the property data for company B
 def normalize_property_company_b(property_data, company_name):
-    num_beds = property_data.get("beds", "0")
-    try:
-        num_beds = int(num_beds)
-    except ValueError:
-        num_beds = 0  # or any other default value you prefer if "beds" is not a valid integer
+    def get_number_property(property_data, property_name):
+        try:
+            value = float(property_data.get(property_name) or "0")
+            return int(value)
+        except ValueError:
+            return 0
+
+    numBedrooms = get_number_property(property_data, "numBedrooms")
+    numFullBaths = get_number_property(property_data, "numFullBaths")
+    squareFeet = get_number_property(property_data, "squareFeet")
+    price = get_number_property(property_data, "price")
 
     normalized_property = {
         "address": property_data.get("street", {}).get("#text", "").lower(),
@@ -83,10 +79,10 @@ def normalize_property_company_b(property_data, company_name):
         "state": property_data.get("state", "").lower(),
         "zipCode": str(property_data.get("zip", "")),
         "company": company_name,
-        "numBeds": int(property_data.get("numBedrooms", 0)),
-        "numBaths": int(property_data.get("numFullBaths", 0)) + 0.5 * int(property_data.get("numHalfBaths", 0)),
-        "squareFeet": int(property_data.get("squareFeet", 0)),
-        "price": int(property_data.get("price", 0)),
+        "numBeds": numBedrooms,
+        "numBaths": numFullBaths,
+        "squareFeet": squareFeet,
+        "price": price,
         "description": property_data.get("description", ""),
         "images": [photo["@_source"] for photo in property_data.get("ListingPhoto", [])],
         "latitude": float(property_data.get("latitude", 0)),
@@ -97,11 +93,17 @@ def normalize_property_company_b(property_data, company_name):
 
 # Normalize the property data for company C
 def normalize_property_company_c(property_data, company_name):
-    num_beds = property_data.get("beds", "0")
-    try:
-        num_beds = int(num_beds)
-    except ValueError:
-        num_beds = 0  # or any other default value you prefer if "beds" is not a valid integer
+    def get_number_property(property_data, property_name):
+        try:
+            value = float(property_data.get(property_name) or "0")
+            return int(value)
+        except ValueError:
+            return 0
+
+    numBeds = get_number_property(property_data, "numBeds")
+    numBaths = get_number_property(property_data, "numBaths")
+    squareFeet = get_number_property(property_data, "squareFeet")
+    price = get_number_property(property_data, "price")
 
     normalized_property = {
         "address": property_data.get("address", "").lower(),
@@ -110,15 +112,15 @@ def normalize_property_company_c(property_data, company_name):
         "state": property_data.get("state", "").lower(),
         "zipCode": str(property_data.get("zip", "")),
         "company": company_name,
-        "numBeds": int(property_data.get("numBeds", 0)),
-        "numBaths": float(property_data.get("numBaths", 0)),
-        "squareFeet": int(property_data.get("squareFeet", 0)),
-        "price": int(property_data.get("price", 0)),
+        "numBeds": numBeds,
+        "numBaths": numBaths,
+        "squareFeet": squareFeet,
+        "price": price,
         "description": property_data.get("description", ""),
         "images": [photo["Url"] for photo in property_data.get("images", [])],
         "latitude": float(property_data.get("latitude", 0)),
         "longitude": float(property_data.get("longitude", 0)),
-        "dateAdded": ""  # You might need to get this information from another source
+        "dateAdded": "" 
     }
     return normalized_property
 
