@@ -2,7 +2,7 @@ import json
 import math
 import requests
 
-# Define your API endpoint
+# API endpoint
 API_ENDPOINT = "http://localhost:5000/update_properties"
 
 def post_properties(properties):
@@ -41,8 +41,8 @@ def normalize_property_company_a(property_data, company_name):
 
     normalized_property = {
         "address": property_data.get("address", "").lower(),
-        "market": "",  # You need to determine the market based on the property's location
-        "subMarket": "",
+        "market": "",  # To be assigned later
+        "subMarket": "", # To be assigned later
         "state": property_data.get("state", "").lower(),
         "zipCode": str(property_data.get("zip", "")),
         "company": company_name,
@@ -54,7 +54,7 @@ def normalize_property_company_a(property_data, company_name):
         "images": property_data.get("photos", []),
         "latitude": float(property_data.get("latitude", 0)),
         "longitude": float(property_data.get("longitude", 0)),
-        "dateAdded": property_data.get("dateAvailable", "")  # You might need to convert this to a proper date format
+        "dateAdded": property_data.get("dateAvailable", "") 
     }
     return normalized_property
 
@@ -74,8 +74,8 @@ def normalize_property_company_b(property_data, company_name):
 
     normalized_property = {
         "address": property_data.get("street", {}).get("#text", "").lower(),
-        "market": "",  # You need to determine the market based on the property's location
-        "subMarket": "",
+        "market": "",  # To be assigned later
+        "subMarket": "",# To be assigned later
         "state": property_data.get("state", "").lower(),
         "zipCode": str(property_data.get("zip", "")),
         "company": company_name,
@@ -87,7 +87,7 @@ def normalize_property_company_b(property_data, company_name):
         "images": [photo["@_source"] for photo in property_data.get("ListingPhoto", [])],
         "latitude": float(property_data.get("latitude", 0)),
         "longitude": float(property_data.get("longitude", 0)),
-        "dateAdded": property_data.get("dateAvailable", "")  # You might need to convert this to a proper date format
+        "dateAdded": property_data.get("dateAvailable", "")  
     }
     return normalized_property
 
@@ -107,8 +107,8 @@ def normalize_property_company_c(property_data, company_name):
 
     normalized_property = {
         "address": property_data.get("address", "").lower(),
-        "market": "",  # You need to determine the market based on the property's location
-        "subMarket": "",
+        "market": "",  # To be assigned later
+        "subMarket": "",# To be assigned later
         "state": property_data.get("state", "").lower(),
         "zipCode": str(property_data.get("zip", "")),
         "company": company_name,
@@ -273,9 +273,8 @@ if __name__ == "__main__":
 
     update_status_based_on_previous_day(CURRENT_DAY, properties_company_a, properties_company_b, properties_company_c)
     
-    remove_duplicates(properties_company_a, properties_company_b, properties_company_c)  # Add this line to remove duplicates
+    remove_duplicates(properties_company_a, properties_company_b, properties_company_c)  # To remove duplicates
 
-    # Call the function and store the returned list
     off_market_properties = update_status_based_on_previous_day(CURRENT_DAY, properties_company_a, properties_company_b, properties_company_c)
     
     post_properties(properties_company_a + properties_company_b + properties_company_c + off_market_properties)
@@ -294,7 +293,7 @@ if __name__ == "__main__":
     properties_company_c = normalize_address_format(properties_company_c)
     
     update_status_based_on_previous_day(CURRENT_DAY, properties_company_a, properties_company_b, properties_company_c)
-    remove_duplicates(properties_company_a, properties_company_b, properties_company_c)  # Add this line to remove duplicates
+    remove_duplicates(properties_company_a, properties_company_b, properties_company_c)  # To remove duplicates
     off_market_properties = update_status_based_on_previous_day(CURRENT_DAY, properties_company_a, properties_company_b, properties_company_c)
     
     post_properties(properties_company_a + properties_company_b + properties_company_c + off_market_properties)
