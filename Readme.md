@@ -1,4 +1,4 @@
-### PS Code Challenge 1
+### Home Shield Data Normalization 
 Setup
 Install dependencies: npm install
 Start the server: node server.js
